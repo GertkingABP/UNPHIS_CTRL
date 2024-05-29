@@ -1,16 +1,17 @@
-#---------------------------------------------------------ВЫЗОВЫ МОДУЛЕЙ ОТДЕЛЬНО---------------------------------------------------------#
-#import ModuleHandTracking
-#import ModuleHandVolumeControl
-#import ModuleHandBrightnessControl
-#import ModuleSoundAndBrightnessControl
-#import ModuleHandMouseControl
-#import ModuleYoloModel
+#--------------------------------------------------------ВЫЗОВЫ МОДУЛЕЙ ОТДЕЛЬНО---------------------------------------------------------#
+# import ModuleHandTracking
+# import ModuleHandVolumeControl
+# import ModuleHandBrightnessControl
+# import ModuleSoundAndBrightnessControl
+# import ModuleHandMouseControl
+# import ModuleYoloModel
+# import TestYolo
 
 #----------------------------------------------------------------БИБЛИОТЕКИ----------------------------------------------------------------#
 import ModuleHandTracking as mht
 import customtkinter
 import tkinter as tk
-from tkinter import Button 
+from tkinter import Button
 import os
 import time
 import numpy as np
@@ -766,7 +767,7 @@ class App(customtkinter.CTk):
                     confidence = round(conf, 3)
                     cv2.putText(
                         self.mirrored_frame,
-                        f"{class_name} {str(round(conf, 3))}%",
+                        f"{class_name} {str(round(conf*100, 3))}%",
                         (int(bb[0]), int(bb[1]) - 10),
                         font,
                         1,
