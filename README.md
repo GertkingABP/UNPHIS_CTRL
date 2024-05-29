@@ -4,7 +4,7 @@
 
 ## *2. Использованные технологии*
 Данная система создана с использованием языка Python 3.10, IDE PyCharm Community Edition PyCharm Community Edition 2022.1.2.
-Библиотеки: 
+# Библиотеки: 
 + customtkinter для интерфейса;
 + cv2, YOLO, MediaPipe, для распознавания жестов;
 + speech_recognition для распознавания речи
