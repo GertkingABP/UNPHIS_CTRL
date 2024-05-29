@@ -36,3 +36,5 @@
 
 
 ## *5. Демонстрация системы*
+![mygif](https://github.com/GertkingABP/UNPHIS_CTRL/blob/main/video_for_prez_p1.gif)
+![mygif](https://github.com/GertkingABP/UNPHIS_CTRL/blob/main/video_for_prez_p2.gif)
